@@ -1,0 +1,13 @@
+@use './variables.scss' as v;
+@mixin btn {
+  display: inline-block;
+  padding: 0.375rem 0.775rem;
+  text-transform: uppercase;
+  color: v.$pure-black;
+  border: transparent;
+  cursor: pointer;
+  transition: v.$transition;
+  font-weight: 400;
+  border-radius: 10px;
+  letter-spacing: 0.1rem;
+}

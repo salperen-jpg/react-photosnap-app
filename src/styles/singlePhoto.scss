@@ -1,0 +1,49 @@
+@use './variables.scss' as v;
+.single-photo {
+  position: relative;
+  height: 30rem;
+  display: flex;
+  align-items: flex-end;
+  transition: v.$transition;
+  padding: 2rem;
+  color: white;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .sing-photo-img-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2));
+    z-index: -1;
+  }
+  .info {
+    width: 100%;
+  }
+  h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  hr {
+    color: v.$light-grey;
+  }
+  p {
+    margin-top: 1rem;
+  }
+}
+.single-photo:hover {
+  transform: translateY(-20px);
+  border-image-slice: 2;
+  border-bottom: 10px solid;
+  border-image-source: linear-gradient(#5a77ff, #bc7198, #ffc593);
+}

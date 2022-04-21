@@ -1,0 +1,93 @@
+@use './variables.scss' as v;
+nav {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.nav-center {
+  width: 90vw;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toogle-btn {
+  position: relative;
+  width: 24px;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s linear;
+  background: transparent;
+  margin-top: 1rem;
+}
+.toogle-btn span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #555;
+  transition: all 0.3s linear;
+}
+.bottom {
+  transform: translateY(6px);
+}
+.top-active {
+  transform: rotate(-45deg);
+}
+.bottom-active {
+  transform: rotate(45deg);
+}
+
+.nav-links {
+  display: none;
+}
+.nav-rigth-btn {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  .nav-links li {
+    color: v.$pure-black;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    transition: v.$transition;
+  }
+  .nav-links li:hover {
+    color: v.$light-grey;
+  }
+  .toogle-btn {
+    display: none;
+  }
+  .nav-rigth-btn {
+    display: block;
+    padding: 0.5rem 2rem;
+    background: black;
+    color: white;
+    border-radius: 0;
+    font-size: 0.8rem;
+  }
+}

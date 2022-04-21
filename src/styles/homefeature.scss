@@ -1,0 +1,24 @@
+@use './variables.scss' as v;
+.home-feature {
+  text-align: center;
+  padding: 2rem 0;
+  span {
+    display: block;
+  }
+  .home-icons {
+    font-size: 4rem;
+  }
+  .title {
+    line-height: 1.5;
+    color: v.$pure-black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: v.$light-grey;
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+}

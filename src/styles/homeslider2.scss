@@ -1,0 +1,54 @@
+@use './variables.scss' as v;
+.stories-img-container {
+  background: url('../images/home/mobile/beautiful-stories.jpg') center/cover
+    no-repeat;
+  min-height: 25rem;
+}
+.stories-info-container {
+  padding: 4rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.stories-inner-info-container h2 {
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+.stories-inner-info-container h2 {
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+.stories-inner-info-container p {
+  color: v.$light-grey;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.stories-btn {
+  background: transparent;
+  font-weight: 600;
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .stories-container {
+    display: flex;
+  }
+  .stories-info-container {
+    flex: 0 1 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stories-img-container {
+    flex: 1 0 55%;
+    background: url('../images/home/desktop/beautiful-stories.jpg') center/cover
+      no-repeat;
+    min-height: 70vh;
+  }
+  .stories-inner-info-container p,
+  h2 {
+    max-width: 20rem;
+  }
+}

@@ -1,0 +1,12 @@
+.features-icon {
+  padding: 3rem 0;
+
+  .features-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+  }
+}

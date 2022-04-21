@@ -1,0 +1,54 @@
+.designes-img-container {
+  background: url('../images/home//mobile/designed-for-everyone.jpg')
+    center/cover no-repeat;
+  min-height: 25rem;
+}
+.designes-info-container {
+  padding: 4rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.designes-inner-info-container h2 {
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+.designes-inner-info-container h2 {
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+.designes-inner-info-container p {
+  color: var(--clr-grey-2);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.designes-btn {
+  background: transparent;
+  font-weight: 600;
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .designes-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .designes-info-container {
+    flex: 0 1 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .designes-img-container {
+    flex: 1 0 55%;
+    background: url('../images/home/desktop/designed-for-everyone.jpg')
+      center/cover no-repeat;
+    min-height: 70vh;
+  }
+  .designes-inner-info-container p,
+  h2 {
+    max-width: 20rem;
+  }
+}

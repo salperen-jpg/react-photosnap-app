@@ -1,0 +1,18 @@
+.stories-slider {
+  display: grid;
+}
+@media screen and (min-width: 500px) {
+  .stories-slider {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 800px) {
+  .stories-slider {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .stories-slider {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

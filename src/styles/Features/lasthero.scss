@@ -1,0 +1,42 @@
+.last-hero {
+  background: url('../../images/shared/desktop/bg-beta.jpg') center/cover
+    no-repeat;
+  padding: 3rem 0;
+  color: #fff;
+  .last-hero-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 1rem 2rem;
+  }
+  @media screen and (min-width: 800px) {
+    .last-hero-center {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  h2 {
+    max-width: 20rem;
+    margin-bottom: 1.5rem;
+  }
+  .last-hero-btn {
+    background: transparent;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 800px) {
+  .last-hero {
+    border-left: 6px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(#5a77ff, #bc7198, #ffc593);
+    h2 {
+      margin-bottom: 0;
+      letter-spacing: 0.1rem;
+      line-height: 1.5;
+      max-width: 25rem;
+    }
+  }
+}
