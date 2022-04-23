@@ -1,7 +1,15 @@
 import React from 'react';
-
+import PricingHero from '../components/Pricing/PricingHero';
+import LastHero from '../components/Features/LastHero';
+import Plans from '../components/Pricing/Plans';
 const Pricing = () => {
-  return <div>Pricing</div>;
+  return (
+    <>
+      <PricingHero />
+      <Plans />
+      <LastHero />
+    </>
+  );
 };
 
 export default Pricing;

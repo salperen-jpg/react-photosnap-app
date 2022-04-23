@@ -4,17 +4,17 @@ import { useGlobalContext } from '../context';
 import '../styles/sidebar.scss';
 
 const Sidebar = () => {
-  const { isSidebarOpen } = useGlobalContext();
+  const { isSidebarOpen, toggleSidebar } = useGlobalContext();
   return (
     <aside className={`${isSidebarOpen ? 'sidebar show' : 'sidebar '}`}>
       <ul className='sidebar-links'>
-        <Link to='/stories'>
+        <Link to='/stories' onClick={toggleSidebar}>
           <li>Stories</li>
         </Link>
-        <Link to='/features'>
+        <Link to='/features' onClick={toggleSidebar}>
           <li>Features</li>
         </Link>
-        <Link to='/pricing'>
+        <Link to='/pricing' onClick={toggleSidebar}>
           <li>Pricing</li>
         </Link>
       </ul>

@@ -1,7 +1,7 @@
 import React from 'react';
-import FeaturesInfo from '../Features/FeaturesInfo';
-import Hero from '../Features/Hero';
-import LastHero from '../Features/LastHero';
+import FeaturesInfo from '../components/Features/FeaturesInfo';
+import Hero from '../components/Features/Hero';
+import LastHero from '../components/Features/LastHero';
 
 const Features = () => {
   return (

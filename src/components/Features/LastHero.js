@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Features/lasthero.scss';
+import '../../styles/Features/lasthero.scss';
 
 const LastHero = () => {
   return (

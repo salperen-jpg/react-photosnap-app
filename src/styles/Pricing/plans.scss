@@ -1,0 +1,18 @@
+.plans {
+  padding: 3rem 0;
+
+  // BUTTON STYLING COMING UP
+  &-center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    .plans-inner-container {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+    }
+  }
+}

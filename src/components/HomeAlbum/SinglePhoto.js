@@ -9,7 +9,6 @@ const SinglePhoto = ({
   img: { mobile, desktop },
   showDate,
 }) => {
-  console.log(showDate);
   return (
     <Link to='/stories'>
       <div className='single-photo'>

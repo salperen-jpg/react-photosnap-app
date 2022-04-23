@@ -4,7 +4,7 @@
 .slider-container {
   .img-container {
     min-height: 37vh;
-    background: url('../../images/stories/desktop/new.JPG') center/cover
+    background: url('../../images/pricing/mobile/hero.jpg') center/cover
       no-repeat;
   }
   @media screen and (min-width: 600px) {
@@ -15,7 +15,7 @@
           rgba(0, 0, 0, 0.05),
           rgba(0, 0, 0, 0.2)
         ),
-        url('../../images/stories/desktop/new.JPG') center/cover no-repeat;
+        url('../../images/pricing/desktop/hero.jpg') center/cover no-repeat;
     }
   }
   .slider-info-container {
@@ -63,7 +63,7 @@
     align-items: center;
     border-left: 6px solid;
     border-image-slice: 1;
-    border-image-source: linear-gradient(#5a77ff, #bc7198, #ffc593);
+    border-image-source: linear-gradient(to rigth, #5a77ff, #bc7198, #ffc593);
   }
   .slider-info {
     padding: 0 2rem;
@@ -81,5 +81,3 @@
     flex: 0 1 40%;
   }
 }
-
-// ../../images/features/mobile/hero.jpg

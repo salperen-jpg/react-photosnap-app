@@ -2,11 +2,11 @@ export const sliderData = [
   {
     id: 1,
     name: 'The Mountains',
-    date: 'April 16th 2020',
-    creator: 'John Appleseed',
+    date: 'April 22nd 2022',
+    creator: 'Joanna Sz',
     img: {
       mobile: require('./images/stories/mobile/mountains.jpg'),
-      desktop: require('./images/stories/desktop/mountains.jpg'),
+      desktop: require('./images/stories/desktop/new.JPG'),
     },
   },
   {

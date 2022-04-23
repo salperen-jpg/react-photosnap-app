@@ -1,0 +1,135 @@
+@use '../variables.scss' as v;
+.single-plan {
+  margin: 1rem auto;
+  margin: 1rem 3rem;
+  padding: 3rem 2rem;
+  background: v.$light-grey-2;
+
+  .category {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  @media screen and (min-width: 650px) {
+    .category {
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .category {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+  p {
+    line-height: 1.5;
+    color: v.$light-grey;
+    margin-bottom: 2rem;
+    max-width: 25rem;
+  }
+  .price {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+  }
+  .price-interval {
+    display: block;
+    color: v.$light-grey;
+    margin-bottom: 1rem;
+  }
+  .price-btn {
+    width: 100%;
+    background: v.$pure-black;
+    color: v.$pure-white;
+    border-radius: 0;
+    height: 2.5rem;
+    font-size: 0.7rem;
+  }
+  .rigth-side {
+    display: none;
+  }
+  @media screen and (min-width: 650px) {
+    .rigth-side {
+      display: block;
+      display: flex;
+      justify-content: right;
+      text-align: right;
+    }
+    .rigth-side {
+      flex: 0 0 70%;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .rigth-side {
+      display: none;
+    }
+  }
+}
+.price-left-side {
+  text-align: center;
+}
+@media screen and (min-width: 650px) {
+  .single-plan {
+    display: flex;
+    justify-content: spaace-between;
+  }
+  .category {
+    text-align: left;
+  }
+  .price-left-side {
+    flex: 0 0 30%;
+    text-align: left;
+
+    .price {
+      display: none;
+    }
+    .price-interval {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      .price {
+        display: block;
+      }
+      .price-interval {
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .single-plan {
+    display: block;
+    margin: 0;
+  }
+  .price-left-side {
+    text-align: center;
+  }
+  .rigth-side {
+    display: none;
+  }
+  .price {
+    display: block;
+  }
+  .price-interval {
+    display: block;
+  }
+}
+
+.black-box {
+  background: v.$pure-black;
+  color: v.$pure-white;
+  border-top: 6px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #5a77ff, #bc7198, #ffc593);
+  .price-btn {
+    background: v.$pure-white;
+    color: v.$pure-black;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .black-box {
+    min-height: 500px;
+    display: grid;
+    place-items: center;
+  }
+}

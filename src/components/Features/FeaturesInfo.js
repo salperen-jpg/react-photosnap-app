@@ -1,6 +1,6 @@
 import React from 'react';
-import { useGlobalContext } from '../context';
-import HomeFeature from '../components/HomeFeatures/HomeFeature';
+import { useGlobalContext } from '../../context';
+import HomeFeature from '../../components/HomeFeatures/HomeFeature';
 
 const FeaturesInfo = () => {
   const { features } = useGlobalContext();
